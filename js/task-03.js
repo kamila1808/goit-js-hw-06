@@ -16,7 +16,7 @@ const images = [
 const imagesEl = document.querySelector(".gallery");
 
 const elements = images.map(function({url, alt}) {
-return `<li><img src = "${url}" alt = "${alt}" width="380" height="320"></li>`;
-});
+return `<li><img src="${url}" alt ="${alt}" width="380" height="320"></li>`;
+}).join("");
 
 imagesEl.insertAdjacentHTML("afterbegin", elements);
